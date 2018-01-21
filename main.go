@@ -1,6 +1,7 @@
 package main
 import (
         "github.com/astaxie/beego"
+        _ "github.com/arifseft/go-simple-chat/routers"
         "strconv"
         "os"
 )
@@ -9,9 +10,5 @@ func main() {
         if err == nil {
                 beego.BConfig.Listen.HTTPPort = port
         }
-        //host, err := strconv.Atoi(os.Getenv("HOST"))
-        //if err == nil {
-                beego.BConfig.Listen.HTTPAddr = os.Getenv("HOST")
-        //}
         beego.Run()
 }
