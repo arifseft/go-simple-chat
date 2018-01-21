@@ -1,0 +1,25 @@
+{{template "base/base.html" .}}
+{{define "head"}}
+<title>Simple Chat - Websocket</title>
+{{end}}
+{{define "body"}}
+<div class="container">
+    <div class="row">
+        <a href="/"><h3>Home</h3></a>
+        <h4>Group: <span id="group">{{.Group}}</span></h4>
+        <h4>Username: <span id="uname">{{.UserName}}</span></h4>
+        
+        <div class="well">
+            <ul id="chatbox">
+                <li>Welcome to chat</li>
+            </ul>
+        </div>
+        <form class="form-inline">
+            <div class="col-md-6 form-group">
+                <input id="sendbox" type="text" class="form-control" onkeydown="if(event.keyCode==13)return false;" required>
+            </div>
+            <button id="sendbtn" type="button" class="btn btn-default">Send</button>
+        </form>
+    </div>
+</div>
+{{end}}
