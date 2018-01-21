@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"github.com/arifseft/go-simple-chat/controllers"
 	"github.com/astaxie/beego"
+	"github.com/arifseft/go-simple-chat/controllers"
 )
 
 func init() {

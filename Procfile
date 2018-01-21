@@ -1,1 +1,1 @@
-web: go-simple-chat -p 5000
+web: go-simple-chat
