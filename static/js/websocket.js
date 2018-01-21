@@ -1,8 +1,18 @@
 var socket;
 
 $(document).ready(function () {
+    var sock;
+    switch (location.protocol) {
+        case 'http:':
+            sock = 'ws://';
+            break;
+        case 'https:':
+            sock = 'wss://';
+            break;
+    }
+    
     // Create a socket
-    socket = new WebSocket('wss://' + window.location.host + '/chat/join?uname=' + $('#uname').text() + '&group=' + $('#group').text());
+    socket = new WebSocket(sock + window.location.host + '/chat/join?uname=' + $('#uname').text() + '&group=' + $('#group').text());
         
     socket.onmessage = function (event) {
         var data = JSON.parse(event.data);
