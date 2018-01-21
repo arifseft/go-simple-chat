@@ -1,1 +1,1 @@
-web: go-simple-chat -p $PORT
+web: go-simple-chat -p 5000
