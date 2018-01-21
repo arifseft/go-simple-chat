@@ -9,5 +9,9 @@ func main() {
         if err == nil {
                 beego.BConfig.Listen.HTTPPort = port
         }
+        //host, err := strconv.Atoi(os.Getenv("HOST"))
+        //if err == nil {
+                beego.BConfig.Listen.HTTPAddr = os.Getenv("HOST")
+        //}
         beego.Run()
 }
