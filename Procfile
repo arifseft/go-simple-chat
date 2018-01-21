@@ -1,1 +1,1 @@
-web: go-simple-chat
+web: go-simple-chat -p $PORT
