@@ -2,7 +2,7 @@ var socket;
 
 $(document).ready(function () {
     // Create a socket
-    socket = new WebSocket('ws://' + window.location.host + '/chat/join?uname=' + $('#uname').text() + '&group=' + $('#group').text());
+    socket = new WebSocket('wss://' + window.location.host + '/chat/join?uname=' + $('#uname').text() + '&group=' + $('#group').text());
         
     socket.onmessage = function (event) {
         var data = JSON.parse(event.data);
