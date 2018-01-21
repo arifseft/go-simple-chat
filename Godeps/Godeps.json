@@ -1,23 +1,8 @@
 {
-	"ImportPath": "github.com/arifseft/go-simple-chat-heroku",
+	"ImportPath": "github.com/arifseft/go-simple-chat",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
-		{
-			"ImportPath": "github.com/arifseft/go-simple-chat/controllers",
-			"Rev": "5f879875a0d7937b7d056f87e6af4a658e82e8db"
-		},
-		{
-			"ImportPath": "github.com/arifseft/go-simple-chat/models",
-			"Rev": "5f879875a0d7937b7d056f87e6af4a658e82e8db"
-		},
-		{
-			"ImportPath": "github.com/arifseft/go-simple-chat/routers",
-			"Rev": "5f879875a0d7937b7d056f87e6af4a658e82e8db"
-		},
 		{
 			"ImportPath": "github.com/astaxie/beego",
 			"Comment": "v1.9.2-2-gf166888",
