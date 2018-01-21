@@ -1,0 +1,12 @@
+{
+  "name": "Go Simple Chat",
+  "description": "Go Simple Chat",
+  "keywords": [
+    "golang",
+    "go",
+    "chat",
+    "websocket"
+  ],
+  "website": "http://github.com/arifseft/go-simple-chat",
+  "repository": "http://github.com/arifseft/go-simple-chat"
+}
